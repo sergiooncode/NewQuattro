@@ -1,0 +1,128 @@
+* {margin: 0; padding: 0;}
+
+body {
+  margin: 0px;
+  padding: 0px;
+  font-size: 18pt;
+  font-family: "Open Sans", "Helvetica", "Arial";
+    }
+
+/*  ------------------------------|  LAYOUT  |------------------------------  */
+  
+#content {
+    width: 100%;
+    }  
+
+#signin {
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  display: -moz-box;
+  -moz-box-orient: horizontal;
+  display: box;
+  box-orient: horizontal;
+  padding: 1em;
+  background-color: whiteSmoke;
+  border-bottom: 1pt solid #E5E5E5;
+}
+
+/*  -----------------------------|  PAGEBODY  |-----------------------------  */
+
+#board {
+  margin: 95px;
+  width: 610px;
+  height: 500px;
+  border: 4px solid grey;     
+  border-radius: 10px;
+  background: #008fc6;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-box-align: center;
+  display: -moz-box;
+  -moz-box-orient: vertical;
+  -moz-box-align: center;
+  display: box;
+  box-orient: vertical;
+  box-align: center;
+  }
+
+#victory {
+  height: 1em;
+  padding: 5pt;
+  font-weight: bold;
+}
+
+/* Initial element visibility */
+.hidden {
+  display: none !important;
+}
+
+/* Signin styles */
+#signinStatusContainer {
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1;
+  box-flex: 1;
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+}
+
+#signinStatusContainer > :not(.visible) {
+  display: none;
+}
+
+/* Board styles */
+table {
+  text-align: center;
+  padding: 5pt 0pt;
+  border-spacing: 0pt;
+}
+td {
+  width: 5em;
+  height: 5em;
+  border: 2pt solid #000;
+  border-radius: 45px;
+  background-color: white;
+  color: white;
+  -webkit-transition: all .1s;
+  -moz-transition: all .1s;
+  transition: all .1s;
+}
+td:hover {
+  background: #D3E3E8;
+}
+  
+#board ul {
+    font-size: 0.85em;
+    list-style: none;
+    padding: 3px;
+    float: left;
+    }
+
+#board li {
+  text-align: center;
+  width: 20px;
+  height: 20px;
+  border: 2px solid grey;
+  /*padding: 5px;*/
+  /*padding:25px 50px 75px 100px;
+  top padding is 25px
+  right padding is 50px
+  bottom padding is 75px
+  left padding is 100px*/
+  padding: 5px;
+  border-radius: 45px; 
+  background-color: white;
+  }
+
+/*  ------------------------------|  FOOTER  |------------------------------  */
+
+#footer {
+    clear: both;
+    /*border-top: 1px solid #ccc;*/
+    padding: 1.5em 0;
+    }
+
+#footer p {
+    color: #aaa;
+    font-size: small;
+    }
